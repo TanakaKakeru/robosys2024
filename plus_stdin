@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightSPDX-FileCopyrightText: 2024 Kakeru Tanaka
+
 import sys
-   
+
+
 ans = 0.0
 for line in sys.stdin:
     try:
