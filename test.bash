@@ -1,4 +1,4 @@
-#!/bin/bash -xv
+#!/bin/bash -vx
 # SPDX-FileCopyrightSPDX-FileCopyrightText: 2024 Kakeru Tanaka
 # SPDX-License-Identifier: BSD-3-Clause
 
