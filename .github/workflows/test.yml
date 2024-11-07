@@ -3,7 +3,7 @@ on: push
 jobs:
   test:
     runs-on: ubuntsu-latest
-    step:
+    steps:
     - uses: action/checkout@v3
     - name: All test
       run: bush -xv ./test.bash
