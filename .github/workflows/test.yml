@@ -1,0 +1,9 @@
+name: test
+on push
+job:
+  test:
+    runs-on: ubuntsu-latest
+    step:
+    - uses: action/checkout@v3
+    - name: All test
+      run: bush -xv ./test.bash
