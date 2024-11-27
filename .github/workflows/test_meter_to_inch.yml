@@ -1,4 +1,4 @@
-name: test
+name: test_meter_to_inch
 on: push
 jobs: 
   test:
@@ -9,4 +9,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: All test
-      run: bash -xv ./test_plus.bash ./test_meter_to_inch.bash 
+      run: bash -xv ./test_meter_to_inch.bash 
