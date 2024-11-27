@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightSPDX-FileCopyrightText: 2024 Kakeru Tanaka
+# SPDX-License-Identifier: BSD-3-Clause
+
+
+try:
+    meters = float(input("メートル値を入力してください: ")) # 標準入力でメートルの値を取得
+    inches = meters * 39.3701   # メートルをインチに変換 (1メートル = 39.3701インチ)
+    print(f"{meters} メートルは {inches:.2f} インチです")   # 結果を表示
+except ValueError:
+    print("数値を入力してください")
