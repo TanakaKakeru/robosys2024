@@ -17,6 +17,6 @@
 
 ##引用したコード
 - このパッケージ内のplusコマンドのコードは,下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，授業内で本人の許可を得て自身の著作としたものです。
-  - ryuichiueda/my_slides robosys_2024
+  - <ryuichiueda/my_slides robosys_2024>
 
 © 2024 Kakeru Tanaka
