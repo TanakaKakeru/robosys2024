@@ -6,7 +6,7 @@ import sys
 
 
 ans = 0.0
-for line in sys.stdin:
+for line in sys.stdin:  # 入力後Ctrl+Dでパイプなしでも動作
     try:
         ans += int(line)
     except:
