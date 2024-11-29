@@ -5,7 +5,10 @@
 import sys  #sysモジュールを読み込み
 
 try:    
-    meters = float(sys.stdin.read()) # 標準入力でメートルの値を取得 プログラム実行時に同時入力し取得するよう変更 パイプ動作しなかったのでsys.stdin.readに変更
+    if len(sys.argv) > 1:   # プログラム実行時に値を同時入力する場合
+        meters = float(sys.argv[1]) # sys.argv動作
+    else:
+        meters = float(sys.stdin.read()) # 標準入力でメートルの値を取得 プログラム実行時に同時入力し取得するよう変更 パイプ動作しなかったのでsys.stdin.readに変更
     inches = meters * 39.3701   # メートルをインチに変換 (1メートル = 39.3701インチ)
     print(inches)   # 結果を表示
 except ValueError:  # 例外処理
