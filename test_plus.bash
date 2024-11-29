@@ -1,4 +1,4 @@
-#!/bin/bash -vx
+#!/bin/bash 
 # SPDX-FileCopyrightSPDX-FileCopyrightText: 2024 Kakeru Tanaka
 # SPDX-License-Identifier: BSD-3-Clause
 
@@ -10,7 +10,7 @@ ng () {
 res=0
 
 ### NORMAL INPUT ###
-out=$(echo 5 | ./plus)
+out=$(seq 5 | ./plus)
 [ "${out}" = 15.0 ] || ng "$LINENO"
 
 ### STRANGEINPUT ###

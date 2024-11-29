@@ -2,10 +2,11 @@
 # SPDX-FileCopyrightSPDX-FileCopyrightText: 2024 Kakeru Tanaka
 # SPDX-License-Identifier: BSD-3-Clause
 
-import sys
+import sys  #sysモジュールを読み込み
+
 try:    
-    meters = float(sys.argv[1]) # 標準入力でメートルの値を取得 パイプ対応のためプログラム実行時に同時入力し取得するよう変更
+    meters = float(sys.stdin.read()) # 標準入力でメートルの値を取得 プログラム実行時に同時入力し取得するよう変更 パイプ動作しなかったのでsys.stdin.readに変更
     inches = meters * 39.3701   # メートルをインチに変換 (1メートル = 39.3701インチ)
-    print(inches)   # 結果を表示 testが2fがあるとうまくいかない？
+    print(inches)   # 結果を表示
 except ValueError:  # 例外処理
     raise SystemExit(1) # とりあえず1を出すようにしているが問題があれば修正
