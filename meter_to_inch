@@ -2,10 +2,10 @@
 # SPDX-FileCopyrightSPDX-FileCopyrightText: 2024 Kakeru Tanaka
 # SPDX-License-Identifier: BSD-3-Clause
 
-
-try:
-    meters = float(input("メートル値を入力してください: ")) # 標準入力でメートルの値を取得
+import sys
+try:    
+    meters = float(sys.argv[1]) # 標準入力でメートルの値を取得 パイプ対応のためプログラム実行時に同時入力し取得するよう変更
     inches = meters * 39.3701   # メートルをインチに変換 (1メートル = 39.3701インチ)
-    print(f"{meters} メートルは {inches:.2f} インチです")   # 結果を表示
-except ValueError:
-    print("数値を入力してください")
+    print(inches)   # 結果を表示 testが2fがあるとうまくいかない？
+except ValueError:  # 例外処理
+    raise SystemExit(1) # とりあえず1を出すようにしているが問題があれば修正
