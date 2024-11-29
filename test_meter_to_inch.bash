@@ -13,6 +13,8 @@ res=0
 out=$(./meter_to_inch 5)	#outに5での実行結果を代入
 [ "${out}" = 196.8505 ] || ng "$LINENO" #outの値が異常なら現在の行を入れてng実行
 
+out=$(echo 5 | ./meter_to_inch)	#パイプでecho 5の実行結果を代入
+[ "${out}" = 196.8505 ] || ng "$LINENO" #outの値が異常なら現在の行を入れてng実行
 
 ### STRANGEINPUT ###
 out=$(echo あ | ./meter_to_inch)
