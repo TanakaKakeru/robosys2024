@@ -45,7 +45,11 @@ Ctrl+D　 <br>
 $&nbsp;seq&nbsp;5&nbsp;|&nbsp; ./meter_to_inch <br>
 590.5515 &emsp; <出力結果<br>
 
-# 必要なソフトウェア
+# 導入方法
+git(https://git-scm.com/downloads)をインストールした環境で、以下のコマンドを使用することによりパッケージのダウンロードができます。<br>
+$&nbsp;git clone https://github.com/TanakaKakeru/robosys2024.git
+
+# 実行に必要なソフトウェア
 - Python
   - テスト済みバージョン: 3.7～3.10
 
