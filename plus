@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightSPDX-FileCopyrightText: 2024 Kakeru Tanaka
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+
+ans = 0.0
+for line in sys.stdin:  # 入力後Ctrl+Dでパイプなしでも動作
+    try:
+        ans += int(line)
+    except:
+        ans += float(line)
+
+print(ans)

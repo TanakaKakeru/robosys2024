@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightSPDX-FileCopyrightText: 2024 Kakeru Tanaka
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys  #sysモジュールを読み込み
+
+try:    
+    if len(sys.argv) > 1:   # プログラム実行時に値を同時入力する場合(sys.argvにデータ格納されている場合)
+        meters = float(sys.argv[1]) # sys.argv動作
+    else:
+        meters = 0.0    
+        for line in sys.stdin:  # seq等複数行の入力に対応　その場合はメートルを加算し計算
+            meters += float(line)
+    inches = meters * 39.3701   # メートルをインチに変換 (1メートル = 39.3701インチ)
+    print(inches)   # 結果を表示
+except ValueError:  # 例外処理
+    raise SystemExit(1) # とりあえず1を出すようにしているが問題があれば修正
