@@ -5,7 +5,7 @@
 # plusコマンド
 [![test_meter_to_inch](https://github.com/TanakaKakeru/robosys2024/actions/workflows/test_plus.yml/badge.svg)](https://github.com/TanakaKakeru/robosys2024/actions/workflows/test_plus.yml)
 
-標準入力から読み込んだ各行の数字を足し、標準出力します。 <br>
+標準入力から読み込んだ各行の数字を足し、標準出力します。
 入力にパイプを使用しない際は&nbsp;Ctrl+D&nbsp;で計算に移行できます。
 
 ## 実行例
